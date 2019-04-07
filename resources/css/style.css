@@ -153,7 +153,7 @@ nav span {
 
 .meal-banner {
   height: 18rem;
-  background-image: url('/Users/alexmorton/Documents/projects/PT_Eats/resources/images/meal_3.JPG');
+  background-image: url('https://github.com/alexlsalt/port-townsend-eats/blob/master/resources/images/meal_3.JPG?raw=true');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
