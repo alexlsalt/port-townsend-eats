@@ -153,7 +153,7 @@ nav span {
 
 .meal-banner {
   height: 18rem;
-  background: url('https://github.com/alexlsalt/port-townsend-eats/blob/master/resources/images/meal_3.JPG?raw=true');
+  background: url('../images/meal_3.JPG');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -200,7 +200,7 @@ nav span {
 }
 
 .about.chef img {
-  height: 25rem;
+  width: 50%;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   border: 5px solid lightgray;
@@ -215,15 +215,29 @@ nav span {
   background-color: lightgray;
 }
 
+@media only screen and (max-width: 930px) {
+  .about.chef {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about.chef img {
+    width: 75%;
+    height: auto;
+  }
+
+  .about.chef span {
+    width: 90%;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .about h2 {
     background-color: lightgray;
     width: 100%;
     text-align: center;
-  }
-
-  .about.chef img {
-    height: 20rem;
   }
 
   .about.chef span {
@@ -234,31 +248,9 @@ nav span {
   }
 }
 
-@media only screen and (max-width: 930px) {
-  .about.chef {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .about.chef img {
-    height: 22.5rem;
-  }
-
-  .about.chef span {
-    width: 90%;
-    margin-top: 1.5rem;
-    text-align: center;
-  }
-}
 
 /* Footer */
 footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.footer {
   margin-top: 2rem;
   border-top: 3px solid black;
   padding-top: 1.5rem;
@@ -268,37 +260,37 @@ footer {
   align-items: center;
 }
 
-.footer span {
+footer span {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.footer ul {
+footer ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.footer li {
+footer li {
   margin: 0.5rem;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.footer a {
+footer a {
   padding: 1rem;
   border: 3px solid lightgray;
 }
 
-.footer a:hover {
+footer a:hover {
   background-color: lightgray;
 }
 
-.footer a:hover {
+footer a:hover {
   color: black;
 }
 
-.footer a {
+footer a {
   color: gray;
 }
 
@@ -311,27 +303,26 @@ footer {
 }
 
 @media only screen and (max-width: 500px) {
-  .footer {
+  footer {
     height: auto;
     flex-direction: column-reverse;
   }
 
-  .footer span {
-    width: 100%;
+  footer span {
     text-align: center;
     font-size: 1.3rem;
   }
 
-  .footer ul {
+  footer ul {
     flex-direction: column;
     align-items: space-around;
   }
 
-  .footer li {
+  footer li {
     margin-bottom: 2.5rem;
   }
 
-  .footer a {
+  footer a {
     padding-left: 7rem;
     padding-right: 7rem;
   }
@@ -339,5 +330,12 @@ footer {
   .copyright {
     margin-top: 0.5
   }
+}
 
+/* Footer - small screens */
+
+@media only screen and (max-width: 381px) {
+  footer a {
+    padding: 1rem 2rem;
+  }
 }
