@@ -2,6 +2,7 @@
 
 html {
   font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 a {
@@ -25,7 +26,6 @@ nav {
 nav span {
   margin: 1rem;
   font-size: 1.5rem;
-  font-family: 'Source Sans Pro', sans-serif;
 }
 
 @media only screen and (max-width: 800px) {
@@ -70,7 +70,6 @@ nav span {
   font-size: 2rem;
   text-align: center;
   width: 60%;
-  font-family: 'Source Sans Pro', sans-serif;
 }
 
 @media only screen and (max-width: 930px) {
@@ -132,7 +131,6 @@ nav span {
 
 .service span {
   text-align: center;
-  font-family: 'Source Sans Pro', sans-serif;
 }
 
 @media only screen and (max-width: 500px) {
@@ -168,8 +166,8 @@ nav span {
   width: 90%;
   background-color: white;
   padding: 1.5rem;
-  font-family: 'Source Sans Pro', sans-serif;
   opacity: 0.8;
+  text-align: center;
 }
 
 @media only screen and (max-width: 500px) {
@@ -211,7 +209,6 @@ nav span {
   margin-left: 0.5rem;
   padding: 1.5rem;
   width: 50%;
-  font-family: 'Source Sans Pro', sans-serif;
   background-color: lightgray;
 }
 
@@ -263,7 +260,6 @@ footer {
 footer span {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
-  font-family: 'Source Sans Pro', sans-serif;
 }
 
 footer ul {
@@ -274,7 +270,6 @@ footer ul {
 
 footer li {
   margin: 0.5rem;
-  font-family: 'Source Sans Pro', sans-serif;
 }
 
 footer a {
@@ -292,14 +287,6 @@ footer a:hover {
 
 footer a {
   color: gray;
-}
-
-.copyright {
-  font-size: 0.9rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-  border-top: 1px solid gray;
-  padding-top: 0.5rem;
 }
 
 @media only screen and (max-width: 500px) {
@@ -327,9 +314,6 @@ footer a {
     padding-right: 7rem;
   }
 
-  .copyright {
-    margin-top: 0.5
-  }
 }
 
 /* Footer - small screens */
@@ -338,4 +322,26 @@ footer a {
   footer a {
     padding: 1rem 2rem;
   }
+}
+
+/* Copyright at very bottom of page */
+
+.copyright {
+  font-size: 0.9rem;
+  margin: 1.5rem 0 1rem 0;
+  border-top: 1px solid gray;
+  padding-top: 0.5rem;
+  text-align: center;
+  font-family:
+  }
+
+.copyright a {
+  color: black;
+  border-bottom: 3px solid lightpink;
+  padding-bottom: 0.15rem;
+}
+
+.copyright a:hover {
+  color: white;
+  background-color: lightpink;
 }
